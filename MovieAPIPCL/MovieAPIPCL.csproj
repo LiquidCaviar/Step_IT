@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4C63D8DA-CCC0-406D-82FB-149BE9127C99}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MovieAPIPCL</RootNamespace>
+    <AssemblyName>MovieAPIPCL</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\MovieAPI\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Abstraction\Models\IFrontMediaModel.cs" />
+    <Compile Include="Abstraction\Models\IMovieActor.cs" />
+    <Compile Include="Abstraction\Models\IMovieActorDetail.cs" />
+    <Compile Include="Abstraction\Models\IMovieDetail.cs" />
+    <Compile Include="Abstraction\Services\IMovieService.cs" />
+    <Compile Include="Abstraction\Services\IActorService.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="DTOs\MovieActorDetailDTO.cs" />
+    <Compile Include="DTOs\MovieActorDTO.cs" />
+    <Compile Include="DTOs\MovieDetailsDTO.cs" />
+    <Compile Include="DTOs\NowPlayingMoviesDTO.cs" />
+    <Compile Include="DTOs\PopularMoviesDTO.cs" />
+    <Compile Include="DTOs\TopRatedMoviesDTO.cs" />
+    <Compile Include="DTOs\TrendingMoviesDTO.cs" />
+    <Compile Include="Implementation\Models\FrontMediaModel.cs" />
+    <Compile Include="Implementation\Models\MovieActor.cs" />
+    <Compile Include="Implementation\Models\MovieActorDetail.cs" />
+    <Compile Include="Implementation\Models\MovieDetail.cs" />
+    <Compile Include="Implementation\Services\MovieService.cs" />
+    <Compile Include="Implementation\Services\ActorService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebAPIHandler\ApiHandler.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

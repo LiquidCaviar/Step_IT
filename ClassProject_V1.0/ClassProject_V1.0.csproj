@@ -154,5 +154,11 @@
   <ItemGroup>
     <None Include="Resources\photoshop-your-face-into-your-favourite-movie-poster.jpeg" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MovieAPIPCL\MovieAPIPCL.csproj">
+      <Project>{4c63d8da-ccc0-406d-82fb-149be9127c99}</Project>
+      <Name>MovieAPIPCL</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

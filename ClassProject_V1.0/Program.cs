@@ -18,6 +18,8 @@ namespace ClassProject_V1._0
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new MainPage());
+
+            //edit stufffff
         }
     }
 }
