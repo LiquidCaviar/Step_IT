@@ -58,6 +58,7 @@
     <Compile Include="DTOs\PopularMoviesDTO.cs" />
     <Compile Include="DTOs\TopRatedMoviesDTO.cs" />
     <Compile Include="DTOs\TrendingMoviesDTO.cs" />
+    <Compile Include="DTOs\UpcomingMoviesDTO.cs" />
     <Compile Include="Implementation\Models\FrontMediaModel.cs" />
     <Compile Include="Implementation\Models\MovieActor.cs" />
     <Compile Include="Implementation\Models\MovieActorDetail.cs" />
