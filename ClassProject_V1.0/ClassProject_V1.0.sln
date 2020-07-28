@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassProject_V1.0", "ClassP
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieAPIPCL", "..\MovieAPIPCL\MovieAPIPCL.csproj", "{4C63D8DA-CCC0-406D-82FB-149BE9127C99}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForTesting", "..\ForTesting\ForTesting.csproj", "{F960008C-E87F-4006-A405-6D87A336017D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{4C63D8DA-CCC0-406D-82FB-149BE9127C99}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4C63D8DA-CCC0-406D-82FB-149BE9127C99}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4C63D8DA-CCC0-406D-82FB-149BE9127C99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F960008C-E87F-4006-A405-6D87A336017D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F960008C-E87F-4006-A405-6D87A336017D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F960008C-E87F-4006-A405-6D87A336017D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F960008C-E87F-4006-A405-6D87A336017D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

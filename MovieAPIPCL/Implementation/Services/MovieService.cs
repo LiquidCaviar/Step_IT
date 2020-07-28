@@ -91,7 +91,7 @@ namespace MovieAPIPCL.Implementation.Services
                 Status= movieDetail.status,
                 Tagline= movieDetail.tagline,
                 Title= movieDetail.title,
-                Vote_average= movieDetail.vote_average
+                Vote_average= movieDetail.vote_average*10
 
             };
 
@@ -108,13 +108,33 @@ namespace MovieAPIPCL.Implementation.Services
                     Id=i.id,
                     Image=i.poster_path,
                     MediaTitle=i.title,
-                    Rate=i.vote_average,
+                    Rate=i.vote_average*10,
                     ReleaseDate=i.release_date                    
 
                 });
 
             return result;
         }
+
+
+        public async Task<IEnumerable<IFrontMediaModel>> GetUpcomingMoviesPagenationAsync(int page = 1)
+        {
+            var upcomingMovies = await ApiHandler.GetApi<UpcomingMoviesRootDTO>($"/movie/upcoming?language=en-US&page={page}&");
+
+            var result = upcomingMovies.results
+                ?.Select(i => new FrontMediaModel()
+                {
+                    Id = i.id,
+                    Image = i.poster_path,
+                    MediaTitle = i.title,
+                    Rate = i.vote_average*10,
+                    ReleaseDate = i.release_date
+
+                });
+
+            return result;
+        }
+
 
 
     }
