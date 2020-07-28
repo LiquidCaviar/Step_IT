@@ -14,7 +14,7 @@ using ClassProject_V1._0.FormVisualStuff;
 namespace ClassProject_V1._0.UserDefinedControls
 {
     public partial class MovieCard : UserControl
-    {       
+    {
         public MovieCard()
         {
             InitializeComponent();
@@ -23,25 +23,24 @@ namespace ClassProject_V1._0.UserDefinedControls
 
         public void SetMoviePoster(string imagelink)
         {
-            
-            pictureBox1.Load(imagelink);
+            pictureBox1.Load(@"https://image.tmdb.org/t/p/w500" + imagelink);
         }
 
-        public void SetMovieRating(int MovieRating)
+        public void SetMovieRating(double MovieRating)
         {
-             
-            if (MovieRating>0 && MovieRating<=40)
+
+            if (MovieRating > 0 && MovieRating <= 40)
             {
-                UpdateCircullarProgressbar(MovieRating, Color.FromArgb(177, 0, 0)); 
+                UpdateCircullarProgressbar(Convert.ToInt32(MovieRating), Color.FromArgb(177, 0, 0));
             }
             else if (MovieRating > 40 && MovieRating <= 60)
             {
-                UpdateCircullarProgressbar(MovieRating, Color.FromArgb(255, 189, 44));
-                
+                UpdateCircullarProgressbar(Convert.ToInt32(MovieRating), Color.FromArgb(255, 189, 44));
+
             }
-            else if(MovieRating > 60 && MovieRating <= 100)
+            else if (MovieRating > 60 && MovieRating <= 100)
             {
-                UpdateCircullarProgressbar(MovieRating, Color.FromArgb(24, 160, 94)); 
+                UpdateCircullarProgressbar(Convert.ToInt32(MovieRating), Color.FromArgb(24, 160, 94));
             }
             else
             {
@@ -56,5 +55,17 @@ namespace ClassProject_V1._0.UserDefinedControls
             circularProgressBar1.Text = $"{Rating}%";
             circularProgressBar1.ProgressColor = PBcolor;
         }
+
+        public void SetMovieName(string Mname)
+        {
+            lbl_name.Text = Mname;
+        }
+
+        public void SetMovieDate(DateTime Mdate)
+        {
+            lbl_date.Text = Mdate.ToShortDateString().ToString();
+        }
+
+
     }
 }

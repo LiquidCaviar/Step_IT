@@ -103,6 +103,12 @@
     <Compile Include="UserDefinedControls\MovieCard.Designer.cs">
       <DependentUpon>MovieCard.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserDefinedControls\MoviePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserDefinedControls\MoviePanel.Designer.cs">
+      <DependentUpon>MoviePanel.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Forms\MainPage.resx">
       <DependentUpon>MainPage.cs</DependentUpon>
     </EmbeddedResource>
@@ -130,6 +136,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserDefinedControls\MovieCard.resx">
       <DependentUpon>MovieCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserDefinedControls\MoviePanel.resx">
+      <DependentUpon>MoviePanel.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
