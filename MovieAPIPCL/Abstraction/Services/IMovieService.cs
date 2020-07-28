@@ -18,5 +18,9 @@ namespace MovieAPIPCL.Abstraction.Services
 
         Task<IMovieDetail> GetMovieDetailAsync(int movieID);
 
+        Task<IEnumerable<IFrontMediaModel>> GetTopRatedMoviesPagenationAsync(int page = 1);
+
+        Task<IEnumerable<IFrontMediaModel>> GetUpcomingMoviesPagenationAsync(int page = 1);
+
     }
 }

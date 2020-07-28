@@ -48,6 +48,7 @@
     <Compile Include="Abstraction\Models\IMovieActor.cs" />
     <Compile Include="Abstraction\Models\IMovieActorDetail.cs" />
     <Compile Include="Abstraction\Models\IMovieDetail.cs" />
+    <Compile Include="Abstraction\Services\IImageService.cs" />
     <Compile Include="Abstraction\Services\IMovieService.cs" />
     <Compile Include="Abstraction\Services\IActorService.cs" />
     <Compile Include="Class1.cs" />
@@ -58,10 +59,12 @@
     <Compile Include="DTOs\PopularMoviesDTO.cs" />
     <Compile Include="DTOs\TopRatedMoviesDTO.cs" />
     <Compile Include="DTOs\TrendingMoviesDTO.cs" />
+    <Compile Include="DTOs\UpcomingMoviesDTO.cs" />
     <Compile Include="Implementation\Models\FrontMediaModel.cs" />
     <Compile Include="Implementation\Models\MovieActor.cs" />
     <Compile Include="Implementation\Models\MovieActorDetail.cs" />
     <Compile Include="Implementation\Models\MovieDetail.cs" />
+    <Compile Include="Implementation\Services\ImageService.cs" />
     <Compile Include="Implementation\Services\MovieService.cs" />
     <Compile Include="Implementation\Services\ActorService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
