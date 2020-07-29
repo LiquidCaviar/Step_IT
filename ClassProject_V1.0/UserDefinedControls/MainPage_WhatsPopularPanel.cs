@@ -9,12 +9,14 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Net.Http.Headers;
 using ClassProject_V1._0.FormVisualStuff;
+using MovieAPIPCL.Implementation.Models;
+using MovieAPIPCL.Abstraction.Models;
 
 namespace ClassProject_V1._0.UserDefinedControls
 {
     public partial class MainPage_WhatsPopularPanel : UserControl
     {
-        
+
         public MainPage_WhatsPopularPanel()
         {
             InitializeComponent();
@@ -24,11 +26,13 @@ namespace ClassProject_V1._0.UserDefinedControls
             DeactivateButton(button2);
         }
 
-        public void AddMovieCard(string imagelink, int rating)
+        public void AddMovieCard(IFrontMediaModel movie_info)
         {
             flowLayoutPanel1.Controls.Add(new MovieCard());
-            (flowLayoutPanel1.Controls[flowLayoutPanel1.Controls.Count - 1] as MovieCard).SetMoviePoster(imagelink);
-            (flowLayoutPanel1.Controls[flowLayoutPanel1.Controls.Count - 1] as MovieCard).SetMovieRating(rating);
+            (flowLayoutPanel1.Controls[flowLayoutPanel1.Controls.Count - 1] as MovieCard).SetMoviePoster(movie_info.Image);
+            (flowLayoutPanel1.Controls[flowLayoutPanel1.Controls.Count - 1] as MovieCard).SetMovieRating(movie_info.Rate);
+            (flowLayoutPanel1.Controls[flowLayoutPanel1.Controls.Count - 1] as MovieCard).SetMovieDate(movie_info.ReleaseDate);
+            (flowLayoutPanel1.Controls[flowLayoutPanel1.Controls.Count - 1] as MovieCard).SetMovieName(movie_info.MediaTitle);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -41,7 +45,7 @@ namespace ClassProject_V1._0.UserDefinedControls
         {
             ActivateButton(sender as Button);
             DeactivateButton(button1);
-        } 
+        }
         private void DeactivateButton(Button i_button)
         {
             i_button.BackColor = Color.Transparent;
@@ -49,9 +53,14 @@ namespace ClassProject_V1._0.UserDefinedControls
         }
         private void ActivateButton(Button i_button)
         {
-            
+
             i_button.BackColor = Color.FromArgb(3, 37, 65);
             i_button.ForeColor = Color.FromArgb(81, 226, 181);
+        }
+
+        public void SetHeadlineText(string text)
+        {
+            label1.Text = text;
         }
     }
 }

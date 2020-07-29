@@ -51,3 +51,4 @@ C:\Users\Thinkpad\Documents\GitHub\Step_IT\ClassProject_V1.0\obj\Debug\ClassProj
 C:\Users\Thinkpad\Documents\GitHub\Step_IT\ClassProject_V1.0\obj\Debug\ClassProject_V1.0.csproj.CopyComplete
 C:\Users\Thinkpad\Documents\GitHub\Step_IT\ClassProject_V1.0\obj\Debug\ClassProject_V1.0.exe
 C:\Users\Thinkpad\Documents\GitHub\Step_IT\ClassProject_V1.0\obj\Debug\ClassProject_V1.0.pdb
+C:\Users\Thinkpad\Documents\GitHub\Step_IT\ClassProject_V1.0\obj\Debug\ClassProject_V1._0.UserDefinedControls.MoviePanel.resources
