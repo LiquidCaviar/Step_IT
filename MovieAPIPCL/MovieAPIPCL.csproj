@@ -70,7 +70,10 @@
     <Compile Include="DTOs\MovieDTO\TopRatedMoviesDTO.cs" />
     <Compile Include="DTOs\MovieDTO\TrendingMoviesDTO.cs" />
     <Compile Include="DTOs\MovieDTO\UpcomingMoviesDTO.cs" />
+    <Compile Include="DTOs\TvShowsDTO\AiringTodayTVShowsDTO.cs" />
+    <Compile Include="DTOs\TvShowsDTO\OnTVShowsDTO.cs" />
     <Compile Include="DTOs\TvShowsDTO\PopularTVShowsDTO.cs" />
+    <Compile Include="DTOs\TvShowsDTO\TopRatedTVShowsDTO.cs" />
     <Compile Include="Implementation\Models\GlobalModels\FrontMediaModel.cs" />
     <Compile Include="Implementation\Models\MovieModels\MovieActor.cs" />
     <Compile Include="Implementation\Models\MovieModels\MovieActorDetail.cs" />

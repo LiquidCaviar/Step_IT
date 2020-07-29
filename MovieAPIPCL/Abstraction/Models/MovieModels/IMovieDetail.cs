@@ -37,5 +37,6 @@ namespace MovieAPIPCL.Abstraction.Models
          List<FrontMediaModel> RecommendedMovies { get; set; }
          List<IMovieReview> movieReviews { get; set; }
          MovieImages movieImages { get; set; }
+         string backDropPath { get; set; }
     }
 }

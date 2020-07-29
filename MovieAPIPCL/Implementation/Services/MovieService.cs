@@ -99,7 +99,8 @@ namespace MovieAPIPCL.Implementation.Services
                 videoUrls = await GetMovieVideosURLByID(movieDetail.id),
                 RecommendedMovies = await GetMovieRecommendations(movieDetail.id),
                 movieReviews=(await GetMovieReviews(movieDetail.id))?.ToList(),
-                movieImages=(MovieImages)await GetMovieImagesAsync(movieDetail.id)
+                movieImages=(MovieImages)await GetMovieImagesAsync(movieDetail.id),
+                backDropPath= "https://image.tmdb.org/t/p/w500"+ movieDetail.backdrop_path
 
             };
 

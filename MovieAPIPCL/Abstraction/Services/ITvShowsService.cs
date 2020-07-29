@@ -9,6 +9,8 @@ namespace MovieAPIPCL.Abstraction.Services
 {
     public interface ITvShowsService
     {
-        Task<IFrontMediaModel> GetPopularTVShowsPagenationAsync(int page=1);
+        Task<IEnumerable<IFrontMediaModel>> GetPopularTVShowsPagenationAsync(int page=1);
+        Task<IEnumerable<IFrontMediaModel>> GetAiringTodayTVShowsPagenationAsync(int page = 1);
+        Task<IEnumerable<IFrontMediaModel>> GetOnTVShowsPagenationAsync(int page = 1);
     }
 }
