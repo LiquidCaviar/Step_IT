@@ -17,6 +17,9 @@ namespace ForTesting
 
             MultiSearchService msServ = new MultiSearchService();
             var testMser = await msServ.MultiSearch("The Flash");
+
+            TvShowsService tvSer = new TvShowsService();
+            var tvPop = await tvSer.GetAiringTodayTVShowsPagenationAsync();
             
             Console.WriteLine();
         }

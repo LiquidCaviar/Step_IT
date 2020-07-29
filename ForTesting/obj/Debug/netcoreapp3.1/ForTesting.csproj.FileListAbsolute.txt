@@ -1,0 +1,17 @@
+C:\Users\Mike\Documents\GitHub\Step_IT\ForTesting\bin\Debug\netcoreapp3.1\ForTesting.exe
+C:\Users\Mike\Documents\GitHub\Step_IT\ForTesting\bin\Debug\netcoreapp3.1\ForTesting.deps.json
+C:\Users\Mike\Documents\GitHub\Step_IT\ForTesting\bin\Debug\netcoreapp3.1\ForTesting.runtimeconfig.json
+C:\Users\Mike\Documents\GitHub\Step_IT\ForTesting\bin\Debug\netcoreapp3.1\ForTesting.runtimeconfig.dev.json
+C:\Users\Mike\Documents\GitHub\Step_IT\ForTesting\bin\Debug\netcoreapp3.1\ForTesting.dll
+C:\Users\Mike\Documents\GitHub\Step_IT\ForTesting\bin\Debug\netcoreapp3.1\ForTesting.pdb
+C:\Users\Mike\Documents\GitHub\Step_IT\ForTesting\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Mike\Documents\GitHub\Step_IT\ForTesting\bin\Debug\netcoreapp3.1\MovieAPIPCL.dll
+C:\Users\Mike\Documents\GitHub\Step_IT\ForTesting\bin\Debug\netcoreapp3.1\MovieAPIPCL.pdb
+C:\Users\Mike\Documents\GitHub\Step_IT\ForTesting\obj\Debug\netcoreapp3.1\ForTesting.csprojAssemblyReference.cache
+C:\Users\Mike\Documents\GitHub\Step_IT\ForTesting\obj\Debug\netcoreapp3.1\ForTesting.AssemblyInfoInputs.cache
+C:\Users\Mike\Documents\GitHub\Step_IT\ForTesting\obj\Debug\netcoreapp3.1\ForTesting.AssemblyInfo.cs
+C:\Users\Mike\Documents\GitHub\Step_IT\ForTesting\obj\Debug\netcoreapp3.1\ForTesting.csproj.CoreCompileInputs.cache
+C:\Users\Mike\Documents\GitHub\Step_IT\ForTesting\obj\Debug\netcoreapp3.1\ForTesting.csproj.CopyComplete
+C:\Users\Mike\Documents\GitHub\Step_IT\ForTesting\obj\Debug\netcoreapp3.1\ForTesting.dll
+C:\Users\Mike\Documents\GitHub\Step_IT\ForTesting\obj\Debug\netcoreapp3.1\ForTesting.pdb
+C:\Users\Mike\Documents\GitHub\Step_IT\ForTesting\obj\Debug\netcoreapp3.1\ForTesting.genruntimeconfig.cache

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace MovieAPIPCL.DTOs.TvShowsDTO
 {
     // Root myDeserializedClass = JsonConvert.DeserializeObject<Root>(myJsonResponse); 
-    public class PopularTVShowDTO
+    public class AiringTodayTVShowDTO
     {
         public string original_name { get; set; }
         public List<int> genre_ids { get; set; }
@@ -25,12 +25,12 @@ namespace MovieAPIPCL.DTOs.TvShowsDTO
 
     }
 
-    public class PopularTVShowsRootDTO
+    public class AiringTodayTVShowsRootDTO
     {
         public int page { get; set; }
         public int total_results { get; set; }
         public int total_pages { get; set; }
-        public List<PopularTVShowDTO> results { get; set; }
+        public List<AiringTodayTVShowDTO> results { get; set; }
 
     }
 

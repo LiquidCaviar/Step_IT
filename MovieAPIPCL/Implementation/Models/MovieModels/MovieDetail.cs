@@ -34,5 +34,6 @@ namespace MovieAPIPCL.Implementation.Models
         public List<FrontMediaModel> RecommendedMovies { get; set; }
         public List<IMovieReview> movieReviews { get; set; }
         public MovieImages movieImages { get; set; }
+        public string backDropPath { get; set; }
     }
 }
