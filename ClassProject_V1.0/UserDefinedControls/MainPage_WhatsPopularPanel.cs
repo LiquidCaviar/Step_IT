@@ -11,12 +11,14 @@ using System.Net.Http.Headers;
 using ClassProject_V1._0.FormVisualStuff;
 using MovieAPIPCL.Implementation.Models;
 using MovieAPIPCL.Abstraction.Models;
+using MovieAPIPCL.Implementation.Services;
 
 namespace ClassProject_V1._0.UserDefinedControls
 {
     public partial class MainPage_WhatsPopularPanel : UserControl
     {
-
+        private Action GetPopularMoviesOnTV;
+        private Action GetPopularMoviesInTheaters;
         public MainPage_WhatsPopularPanel()
         {
             InitializeComponent();
@@ -24,6 +26,9 @@ namespace ClassProject_V1._0.UserDefinedControls
             button2.Region = Region.FromHrgn(Roundანგლეს.CreateRoundRectRgn(0, 0, button2.Width, button2.Height, 40, 40));
             ActivateButton(button1);
             DeactivateButton(button2);
+
+            button1.Visible = false;
+            button2.Visible = false;
         }
 
         public void AddMovieCard(IFrontMediaModel movie_info)
@@ -33,12 +38,14 @@ namespace ClassProject_V1._0.UserDefinedControls
             (flowLayoutPanel1.Controls[flowLayoutPanel1.Controls.Count - 1] as MovieCard).SetMovieRating(movie_info.Rate);
             (flowLayoutPanel1.Controls[flowLayoutPanel1.Controls.Count - 1] as MovieCard).SetMovieDate(movie_info.ReleaseDate);
             (flowLayoutPanel1.Controls[flowLayoutPanel1.Controls.Count - 1] as MovieCard).SetMovieName(movie_info.MediaTitle);
+            (flowLayoutPanel1.Controls[flowLayoutPanel1.Controls.Count - 1] as MovieCard).SetMovieID(movie_info.Id);
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             ActivateButton(sender as Button);
             DeactivateButton(button2);
+            //LoadPopularMoviesOnTV?.Invoke();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -62,5 +69,16 @@ namespace ClassProject_V1._0.UserDefinedControls
         {
             label1.Text = text;
         }
+
+        private void LoadPopularMoviesOnTV()
+        {
+           // ServiceContainer.CustomServiceContainer.GetService<MovieService>().get;
+        }
+
+        private void LoadPopularMoviesInTheaters()
+        {
+
+        }
+
     }
 }

@@ -83,6 +83,66 @@ namespace ClassProject_V1._0.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap iconfinder_Arrow_film_movie_play_player_start_video_1886336__1_ {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder_Arrow_film_movie_play_player_start_video_1886336 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconfinder_Bookmark_favorite_ribbon_vertical_1886497 {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder_Bookmark_favorite_ribbon_vertical_1886497", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconfinder_Bookmark_wishlist_favorites_favourite_heart_like_love_1886480 {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder_Bookmark_wishlist_favorites_favourite_heart_like_love_1886480", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconfinder_Bullet_list_menu_lines_points_items_options_1886507 {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder_Bullet_list_menu_lines_points_items_options_1886507", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconfinder_Bullet_list_menu_lines_points_items_options_1886507__1_ {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder_Bullet_list_menu_lines_points_items_options_1886507 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconfinder_favorite_rate_favourite_bookmark_Star_1886928 {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder_favorite_rate_favourite_bookmark_Star_1886928", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap photoshop_your_face_into_your_favourite_movie_poster {
             get {
                 object obj = ResourceManager.GetObject("photoshop-your-face-into-your-favourite-movie-poster", resourceCulture);

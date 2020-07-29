@@ -169,5 +169,23 @@
       <Name>MovieAPIPCL</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_Bullet_list_menu_lines_points_items_options_1886507.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_Bullet_list_menu_lines_points_items_options_1886507 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_Arrow_film_movie_play_player_start_video_1886336 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_Bookmark_wishlist_favorites_favourite_heart_like_love_1886480.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_Bookmark_favorite_ribbon_vertical_1886497.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_favorite_rate_favourite_bookmark_Star_1886928.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

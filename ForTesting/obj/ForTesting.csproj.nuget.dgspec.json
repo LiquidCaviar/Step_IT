@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Mike\\Documents\\GitHub\\Step_IT\\ForTesting\\ForTesting.csproj": {}
+    "C:\\Users\\Thinkpad\\Documents\\GitHub\\Step_IT\\ForTesting\\ForTesting.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Mike\\Documents\\GitHub\\Step_IT\\ForTesting\\ForTesting.csproj": {
+    "C:\\Users\\Thinkpad\\Documents\\GitHub\\Step_IT\\ForTesting\\ForTesting.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mike\\Documents\\GitHub\\Step_IT\\ForTesting\\ForTesting.csproj",
+        "projectUniqueName": "C:\\Users\\Thinkpad\\Documents\\GitHub\\Step_IT\\ForTesting\\ForTesting.csproj",
         "projectName": "ForTesting",
-        "projectPath": "C:\\Users\\Mike\\Documents\\GitHub\\Step_IT\\ForTesting\\ForTesting.csproj",
-        "packagesPath": "C:\\Users\\Mike\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mike\\Documents\\GitHub\\Step_IT\\ForTesting\\obj\\",
+        "projectPath": "C:\\Users\\Thinkpad\\Documents\\GitHub\\Step_IT\\ForTesting\\ForTesting.csproj",
+        "packagesPath": "C:\\Users\\Thinkpad\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Thinkpad\\Documents\\GitHub\\Step_IT\\ForTesting\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Mike\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Thinkpad\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -27,8 +27,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\Mike\\Documents\\GitHub\\Step_IT\\MovieAPIPCL\\MovieAPIPCL.csproj": {
-                "projectPath": "C:\\Users\\Mike\\Documents\\GitHub\\Step_IT\\MovieAPIPCL\\MovieAPIPCL.csproj"
+              "C:\\Users\\Thinkpad\\Documents\\GitHub\\Step_IT\\MovieAPIPCL\\MovieAPIPCL.csproj": {
+                "projectPath": "C:\\Users\\Thinkpad\\Documents\\GitHub\\Step_IT\\MovieAPIPCL\\MovieAPIPCL.csproj"
               }
             }
           }
@@ -62,15 +62,16 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Mike\\Documents\\GitHub\\Step_IT\\MovieAPIPCL\\MovieAPIPCL.csproj": {
+    "C:\\Users\\Thinkpad\\Documents\\GitHub\\Step_IT\\MovieAPIPCL\\MovieAPIPCL.csproj": {
+      "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mike\\Documents\\GitHub\\Step_IT\\MovieAPIPCL\\MovieAPIPCL.csproj",
+        "projectUniqueName": "C:\\Users\\Thinkpad\\Documents\\GitHub\\Step_IT\\MovieAPIPCL\\MovieAPIPCL.csproj",
         "projectName": "MovieAPIPCL",
-        "projectPath": "C:\\Users\\Mike\\Documents\\GitHub\\Step_IT\\MovieAPIPCL\\MovieAPIPCL.csproj"
+        "projectPath": "C:\\Users\\Thinkpad\\Documents\\GitHub\\Step_IT\\MovieAPIPCL\\MovieAPIPCL.csproj"
       },
       "frameworks": {
         "net472": {}

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "FshHAJY23/cuf7f4+p3GPFnQ7aYEiEMa8gDMBquyQDRQpWlP8sMakDCLW/deKUXY7iJ/MIFG3WVr1n5Qk2+DbQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Thinkpad\\Documents\\GitHub\\Step_IT\\ForTesting\\ForTesting.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Thinkpad\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
