@@ -1,7 +1,10 @@
 ﻿using MovieAPIPCL.Abstraction.Models;
+using MovieAPIPCL.Abstraction.Models.MovieModels;
 using MovieAPIPCL.Abstraction.Services;
 using MovieAPIPCL.DTOs;
+using MovieAPIPCL.DTOs.MovieDTO;
 using MovieAPIPCL.Implementation.Models;
+using MovieAPIPCL.Implementation.Models.MovieModels;
 using MovieAPIPCL.WebAPIHandler;
 using System;
 using System.Collections.Generic;
@@ -24,7 +27,7 @@ namespace MovieAPIPCL.Implementation.Services
 
                     Id=i.id,
                     MediaTitle=i.title,
-                    Image=i.poster_path,
+                    Image= "https://image.tmdb.org/t/p/w500" + i.poster_path,
                     ReleaseDate=i.release_date,
                     Rate=i.vote_average*10
                     
@@ -42,7 +45,7 @@ namespace MovieAPIPCL.Implementation.Services
                 {
                     Id = i.id,
                     MediaTitle = i.title,
-                    Image = i.poster_path,
+                    Image = "https://image.tmdb.org/t/p/w500" + i.poster_path,
                     ReleaseDate = i.release_date,
                     Rate = i.vote_average * 10                   
 
@@ -60,7 +63,7 @@ namespace MovieAPIPCL.Implementation.Services
                 {
                     Id = i.id,
                     MediaTitle = i.title,
-                    Image = i.poster_path,
+                    Image = "https://image.tmdb.org/t/p/w500" + i.poster_path,
                     ReleaseDate = i.release_date,
                     Rate = i.vote_average * 10
 
@@ -76,22 +79,27 @@ namespace MovieAPIPCL.Implementation.Services
             var result = new MovieDetail()
             {
                 Adult = movieDetail.adult,
-                Budget= movieDetail.budget,
-                Genres= movieDetail.genres,
-                Id= movieDetail.id,
-                Original_language= movieDetail.original_language,
-                Original_title= movieDetail.original_title,
-                Overview= movieDetail.overview,
-                Popularity= movieDetail.popularity,
-                Poster_path= movieDetail.poster_path,
-                Release_date= movieDetail.release_date,
-                Revenue= movieDetail.revenue,
-                Runtime= movieDetail.runtime,
-                Spoken_languages= movieDetail.spoken_languages,
-                Status= movieDetail.status,
-                Tagline= movieDetail.tagline,
-                Title= movieDetail.title,
-                Vote_average= movieDetail.vote_average*10
+                Budget = movieDetail.budget,
+                Genres = movieDetail.genres,
+                Id = movieDetail.id,
+                Original_language = movieDetail.original_language,
+                Original_title = movieDetail.original_title,
+                Overview = movieDetail.overview,
+                Popularity = movieDetail.popularity,
+                Poster_path = "https://image.tmdb.org/t/p/w500" + movieDetail.poster_path,
+                Release_date = movieDetail.release_date,
+                Revenue = movieDetail.revenue,
+                Runtime = movieDetail.runtime,
+                Spoken_languages = movieDetail.spoken_languages,
+                Status = movieDetail.status,
+                Tagline = movieDetail.tagline,
+                Title = movieDetail.title,
+                Vote_average = movieDetail.vote_average * 10,
+                movieTrailerURL = await GetMovieTrailerURLByID(movieDetail.id),
+                videoUrls = await GetMovieVideosURLByID(movieDetail.id),
+                RecommendedMovies = await GetMovieRecommendations(movieDetail.id),
+                movieReviews=(await GetMovieReviews(movieDetail.id))?.ToList(),
+                movieImages=(MovieImages)await GetMovieImagesAsync(movieDetail.id)
 
             };
 
@@ -106,7 +114,7 @@ namespace MovieAPIPCL.Implementation.Services
                 ?.Select(i => new FrontMediaModel()
                 {
                     Id=i.id,
-                    Image=i.poster_path,
+                    Image= "https://image.tmdb.org/t/p/w500" + i.poster_path,
                     MediaTitle=i.title,
                     Rate=i.vote_average*10,
                     ReleaseDate=i.release_date                    
@@ -125,7 +133,7 @@ namespace MovieAPIPCL.Implementation.Services
                 ?.Select(i => new FrontMediaModel()
                 {
                     Id = i.id,
-                    Image = i.poster_path,
+                    Image = "https://image.tmdb.org/t/p/w500" + i.poster_path,
                     MediaTitle = i.title,
                     Rate = i.vote_average*10,
                     ReleaseDate = i.release_date
@@ -135,7 +143,81 @@ namespace MovieAPIPCL.Implementation.Services
             return result;
         }
 
+        public async Task<string> GetMovieTrailerURLByID(int movieID)
+        {
+            var movieVideos = await ApiHandler.GetApi<MovieVideosRootDTO>($"/movie/{movieID}/videos?language=en-US&");
+            string key = movieVideos.results.FirstOrDefault(i => i.type == "Trailer").key;
+            return $"https://www.youtube.com/watch?v={key}";
+             
+        }
 
+        public async Task<List<string>> GetMovieVideosURLByID(int movieID)
+        {
+            var movieVideos = await ApiHandler.GetApi<MovieVideosRootDTO>($"/movie/{movieID}/videos?language=en-US&");
+            string key = movieVideos.results.FirstOrDefault(i => i.type == "Trailer").key;
+            return movieVideos.results.Select(i => $"https://www.youtube.com/watch?v={i.key}").ToList();           
+
+        }
+
+        public async Task<List<FrontMediaModel>> GetMovieRecommendations(int movieID) // ??????????????????????????????  IEnumerable<IFrontMediaModel>
+        {
+            var recommendations = await ApiHandler.GetApi<MovieRecommendationsRootDTO>($"/movie/{movieID}/recommendations?language=en-US&page=1&");
+            return recommendations.results.Select(i => new FrontMediaModel()
+            {
+                Id=i.id,
+                Image=i.poster_path,
+                MediaTitle=i.title,
+                overview=i.overview,
+                Rate=i.vote_average*10,
+                ReleaseDate=i.release_date
+                
+            }).ToList();
+             
+        }
+
+        public async Task<IEnumerable<IMovieReview>> GetMovieReviews(int movieID)
+        {
+            var reviews = await ApiHandler.GetApi<MovieCommentsRootDTO>($"/movie/{movieID}/reviews?language=en-US&page=1&");
+            return reviews.results.Select(i => new MovieReview()
+            { 
+                author=i.author,
+                content=i.content,
+                id=i.id,
+                url=i.url
+            });
+
+        }
+
+        public async Task<IMovieImages> GetMovieImagesAsync(int movieID)
+        {
+            var movieImages = await ApiHandler.GetApi<MovieImagesRootDTO>($"/movie/{movieID}/images?");
+            var movieBackdrops = movieImages.backdrops.Select(i => new MovieImagesBackdrop()
+            {
+                aspect_ratio=i.aspect_ratio,
+                file_path= "https://image.tmdb.org/t/p/w500"+i.file_path,
+                height=i.height,
+                iso_639_1=i.iso_639_1,
+                vote_average=i.vote_average*10,
+                vote_count=i.vote_count,
+                width=i.width
+            }).ToList();
+            var moviePosters = movieImages.posters.Select(i => new MovieImagesPoster()
+            {
+                aspect_ratio = i.aspect_ratio,
+                file_path = "https://image.tmdb.org/t/p/w500" + i.file_path,
+                height = i.height,
+                iso_639_1 = i.iso_639_1,
+                vote_average = i.vote_average * 10,
+                vote_count = i.vote_count,
+                width = i.width
+            }).ToList();
+
+
+            return new MovieImages() { backdrops = movieBackdrops, posters = moviePosters };
+
+        }
+
+        
 
     }
 }

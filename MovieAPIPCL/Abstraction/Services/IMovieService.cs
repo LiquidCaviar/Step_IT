@@ -1,4 +1,5 @@
 ﻿using MovieAPIPCL.Abstraction.Models;
+using MovieAPIPCL.Abstraction.Models.MovieModels;
 using MovieAPIPCL.DTOs;
 using MovieAPIPCL.Implementation.Models;
 using System;
@@ -22,5 +23,12 @@ namespace MovieAPIPCL.Abstraction.Services
 
         Task<IEnumerable<IFrontMediaModel>> GetUpcomingMoviesPagenationAsync(int page = 1);
 
+        Task<string> GetMovieTrailerURLByID(int movieID);
+
+        Task<List<FrontMediaModel>> GetMovieRecommendations(int movieID);
+
+        Task<IEnumerable<IMovieReview>> GetMovieReviews(int movieID);
+
+        Task<IMovieImages> GetMovieImagesAsync(int movieID);
     }
 }

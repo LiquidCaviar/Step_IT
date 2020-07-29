@@ -28,7 +28,7 @@ namespace MovieAPIPCL.Implementation.Services
                 Id=i.id,
                 Name=i.name,
                 Order=i.order,
-                Profile_path=i.profile_path
+                Profile_path= "https://image.tmdb.org/t/p/w500"+i.profile_path
             });
 
             return movieCast;
@@ -43,7 +43,7 @@ namespace MovieAPIPCL.Implementation.Services
 
             return new MovieActorDetail()
             {
-                Profile_path= movieActorDetail.profile_path,
+                Profile_path= "https://image.tmdb.org/t/p/w500" + movieActorDetail.profile_path,
                 Adult= movieActorDetail.adult,
                 Also_known_as= movieActorDetail.also_known_as,
                 Biography= movieActorDetail.biography,

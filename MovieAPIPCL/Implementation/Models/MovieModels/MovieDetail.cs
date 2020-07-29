@@ -1,5 +1,7 @@
 ﻿using MovieAPIPCL.Abstraction.Models;
+using MovieAPIPCL.Abstraction.Models.MovieModels;
 using MovieAPIPCL.DTOs;
+using MovieAPIPCL.Implementation.Models.MovieModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -27,5 +29,10 @@ namespace MovieAPIPCL.Implementation.Models
         public string Tagline { get; set; }
         public string Title { get; set; }
         public double Vote_average { get; set; }
+        public string movieTrailerURL { get; set; }
+        public List<string> videoUrls { get; set; }
+        public List<FrontMediaModel> RecommendedMovies { get; set; }
+        public List<IMovieReview> movieReviews { get; set; }
+        public MovieImages movieImages { get; set; }
     }
 }

@@ -9,11 +9,12 @@ namespace MovieAPIPCL.Implementation.Models
 {
     public class FrontMediaModel : IFrontMediaModel
     {
-        public int Id { get; set; }
+        public int? Id { get; set; }
         public string Image { get; set; }
         public string MediaTitle { get; set; }
-        public DateTime ReleaseDate { get; set; }
-        public double Rate { get; set; }
-
+        public DateTime? ReleaseDate { get; set; }
+        public double? Rate { get; set; }
+        public string overview { get; set; }
+        
     }
 }
