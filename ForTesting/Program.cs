@@ -19,7 +19,9 @@ namespace ForTesting
             var testMser = await msServ.MultiSearch("The Flash");
 
             TvShowsService tvSer = new TvShowsService();
-            var tvPop = await tvSer.GetAiringTodayTVShowsPagenationAsync();
+            var tvPop = await tvSer.GetPopularTVShowsPagenationAsync();
+
+            var test123 = await tvSer.GetTVShowDetailsAsync(1668);
             
             Console.WriteLine();
         }

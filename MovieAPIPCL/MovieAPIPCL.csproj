@@ -52,6 +52,7 @@
     <Compile Include="Abstraction\Models\MovieModels\IMovieReview.cs" />
     <Compile Include="Abstraction\Models\MultiSearchModels\IMultiSearchData.cs" />
     <Compile Include="Abstraction\Models\MultiSearchModels\IPerson.cs" />
+    <Compile Include="Abstraction\Models\TVShowsModels\ITVShowDetails.cs" />
     <Compile Include="Abstraction\Services\IMovieService.cs" />
     <Compile Include="Abstraction\Services\IActorService.cs" />
     <Compile Include="Abstraction\Services\IMultiSearchService.cs" />
@@ -74,6 +75,7 @@
     <Compile Include="DTOs\TvShowsDTO\OnTVShowsDTO.cs" />
     <Compile Include="DTOs\TvShowsDTO\PopularTVShowsDTO.cs" />
     <Compile Include="DTOs\TvShowsDTO\TopRatedTVShowsDTO.cs" />
+    <Compile Include="DTOs\TvShowsDTO\TVShowsDetailsDTO.cs" />
     <Compile Include="Implementation\Models\GlobalModels\FrontMediaModel.cs" />
     <Compile Include="Implementation\Models\MovieModels\MovieActor.cs" />
     <Compile Include="Implementation\Models\MovieModels\MovieActorDetail.cs" />
@@ -82,6 +84,7 @@
     <Compile Include="Implementation\Models\MovieModels\MovieReview.cs" />
     <Compile Include="Implementation\Models\MultiSearchModels\MultiSearchData.cs" />
     <Compile Include="Implementation\Models\MultiSearchModels\Person.cs" />
+    <Compile Include="Implementation\Models\TVShowsModels\TVShowDetails.cs" />
     <Compile Include="Implementation\Services\MovieService.cs" />
     <Compile Include="Implementation\Services\ActorService.cs" />
     <Compile Include="Implementation\Services\MultiSearchService.cs" />

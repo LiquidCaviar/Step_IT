@@ -10,6 +10,7 @@ namespace MovieAPIPCL.WebAPIHandler
 {
     public static class ApiHandler
     {
+        public static string defaultImagePath = "https://image.tmdb.org/t/p/w500";
         public static string baseUrl = "https://api.themoviedb.org/3";
         public static string Key = "d19228c35fc64391f3627984299bf70b";
 
