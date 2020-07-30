@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Media.Imaging;
 
 namespace ClassProject_V1._0.Forms
 {
@@ -25,7 +26,13 @@ namespace ClassProject_V1._0.Forms
         {
            
             pictureBox1.Load(i_movie.Poster_path);
-            mainPanel.BackgroundImage = pictureBox1.Image;
+            //
+            var tt = new PictureBox();
+            tt.Load(i_movie.backDropPath);
+            mainPanel.BackgroundImage = tt.Image;
+            //
+           // BitmapImage gg = new BitmapImage( new Uri(i_movie.backDropPath));
+           // mainPanel.BackgroundImage = Image.
             mainPanel.BackgroundImageLayout = ImageLayout.Center;
             tableLayoutPanel1.BackColor = Color.FromArgb(100, 255, 189, 44);
             tableLayoutPanel2.BackColor = Color.FromArgb(80, 255, 189, 44);

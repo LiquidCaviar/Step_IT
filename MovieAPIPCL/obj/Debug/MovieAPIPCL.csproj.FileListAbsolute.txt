@@ -7,12 +7,6 @@ C:\Users\Mike\source\repos\MovieAPIPCL\obj\Debug\MovieAPIPCL.csproj.CoreCompileI
 C:\Users\Mike\source\repos\MovieAPIPCL\obj\Debug\MovieAPIPCL.csproj.CopyComplete
 C:\Users\Mike\source\repos\MovieAPIPCL\obj\Debug\MovieAPIPCL.dll
 C:\Users\Mike\source\repos\MovieAPIPCL\obj\Debug\MovieAPIPCL.pdb
-C:\Users\Thinkpad\Documents\GitHub\Step_IT\MovieAPIPCL\bin\Debug\MovieAPIPCL.dll
-C:\Users\Thinkpad\Documents\GitHub\Step_IT\MovieAPIPCL\bin\Debug\MovieAPIPCL.pdb
-C:\Users\Thinkpad\Documents\GitHub\Step_IT\MovieAPIPCL\obj\Debug\MovieAPIPCL.csprojAssemblyReference.cache
-C:\Users\Thinkpad\Documents\GitHub\Step_IT\MovieAPIPCL\obj\Debug\MovieAPIPCL.csproj.CoreCompileInputs.cache
-C:\Users\Thinkpad\Documents\GitHub\Step_IT\MovieAPIPCL\obj\Debug\MovieAPIPCL.dll
-C:\Users\Thinkpad\Documents\GitHub\Step_IT\MovieAPIPCL\obj\Debug\MovieAPIPCL.pdb
 C:\Users\Mike\Documents\GitHub\Step_IT\MovieAPIPCL\bin\Debug\MovieAPIPCL.dll
 C:\Users\Mike\Documents\GitHub\Step_IT\MovieAPIPCL\bin\Debug\MovieAPIPCL.pdb
 C:\Users\Mike\Documents\GitHub\Step_IT\MovieAPIPCL\obj\Debug\MovieAPIPCL.csprojAssemblyReference.cache
@@ -20,3 +14,9 @@ C:\Users\Mike\Documents\GitHub\Step_IT\MovieAPIPCL\obj\Debug\MovieAPIPCL.csproj.
 C:\Users\Mike\Documents\GitHub\Step_IT\MovieAPIPCL\obj\Debug\MovieAPIPCL.csproj.CopyComplete
 C:\Users\Mike\Documents\GitHub\Step_IT\MovieAPIPCL\obj\Debug\MovieAPIPCL.dll
 C:\Users\Mike\Documents\GitHub\Step_IT\MovieAPIPCL\obj\Debug\MovieAPIPCL.pdb
+C:\Users\Thinkpad\Documents\GitHub\Step_IT\MovieAPIPCL\bin\Debug\MovieAPIPCL.dll
+C:\Users\Thinkpad\Documents\GitHub\Step_IT\MovieAPIPCL\bin\Debug\MovieAPIPCL.pdb
+C:\Users\Thinkpad\Documents\GitHub\Step_IT\MovieAPIPCL\obj\Debug\MovieAPIPCL.csprojAssemblyReference.cache
+C:\Users\Thinkpad\Documents\GitHub\Step_IT\MovieAPIPCL\obj\Debug\MovieAPIPCL.csproj.CoreCompileInputs.cache
+C:\Users\Thinkpad\Documents\GitHub\Step_IT\MovieAPIPCL\obj\Debug\MovieAPIPCL.dll
+C:\Users\Thinkpad\Documents\GitHub\Step_IT\MovieAPIPCL\obj\Debug\MovieAPIPCL.pdb

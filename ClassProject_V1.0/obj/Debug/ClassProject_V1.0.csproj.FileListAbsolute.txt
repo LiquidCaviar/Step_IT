@@ -37,7 +37,6 @@ C:\Users\Thinkpad\Documents\GitHub\Step_IT\ClassProject_V1.0\bin\Debug\CircularP
 C:\Users\Thinkpad\Documents\GitHub\Step_IT\ClassProject_V1.0\bin\Debug\LibVLCSharp.xml
 C:\Users\Thinkpad\Documents\GitHub\Step_IT\ClassProject_V1.0\bin\Debug\LibVLCSharp.WinForms.xml
 C:\Users\Thinkpad\Documents\GitHub\Step_IT\ClassProject_V1.0\bin\Debug\Newtonsoft.Json.xml
-C:\Users\Thinkpad\Documents\GitHub\Step_IT\ClassProject_V1.0\bin\Debug\ServiceContainer.pdb
 C:\Users\Thinkpad\Documents\GitHub\Step_IT\ClassProject_V1.0\obj\Debug\ClassProject_V1.0.csprojAssemblyReference.cache
 C:\Users\Thinkpad\Documents\GitHub\Step_IT\ClassProject_V1.0\obj\Debug\ClassProject_V1._0.MainPage.resources
 C:\Users\Thinkpad\Documents\GitHub\Step_IT\ClassProject_V1.0\obj\Debug\ClassProject_V1._0.Forms.MovieDetailsPage.resources
@@ -46,9 +45,9 @@ C:\Users\Thinkpad\Documents\GitHub\Step_IT\ClassProject_V1.0\obj\Debug\ClassProj
 C:\Users\Thinkpad\Documents\GitHub\Step_IT\ClassProject_V1.0\obj\Debug\ClassProject_V1._0.UserDefinedControls.MainPage_WelcomePanel.resources
 C:\Users\Thinkpad\Documents\GitHub\Step_IT\ClassProject_V1.0\obj\Debug\ClassProject_V1._0.UserDefinedControls.MainPage_WhatsPopularPanel.resources
 C:\Users\Thinkpad\Documents\GitHub\Step_IT\ClassProject_V1.0\obj\Debug\ClassProject_V1._0.UserDefinedControls.MovieCard.resources
+C:\Users\Thinkpad\Documents\GitHub\Step_IT\ClassProject_V1.0\obj\Debug\ClassProject_V1._0.UserDefinedControls.MoviePanel.resources
 C:\Users\Thinkpad\Documents\GitHub\Step_IT\ClassProject_V1.0\obj\Debug\ClassProject_V1.0.csproj.GenerateResource.cache
 C:\Users\Thinkpad\Documents\GitHub\Step_IT\ClassProject_V1.0\obj\Debug\ClassProject_V1.0.csproj.CoreCompileInputs.cache
 C:\Users\Thinkpad\Documents\GitHub\Step_IT\ClassProject_V1.0\obj\Debug\ClassProject_V1.0.csproj.CopyComplete
 C:\Users\Thinkpad\Documents\GitHub\Step_IT\ClassProject_V1.0\obj\Debug\ClassProject_V1.0.exe
 C:\Users\Thinkpad\Documents\GitHub\Step_IT\ClassProject_V1.0\obj\Debug\ClassProject_V1.0.pdb
-C:\Users\Thinkpad\Documents\GitHub\Step_IT\ClassProject_V1.0\obj\Debug\ClassProject_V1._0.UserDefinedControls.MoviePanel.resources
