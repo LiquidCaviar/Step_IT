@@ -1,7 +1,9 @@
 ﻿using MovieAPIPCL.Abstraction.Models;
+using MovieAPIPCL.Abstraction.Models.TVShowsModels;
 using MovieAPIPCL.Abstraction.Services;
 using MovieAPIPCL.DTOs.TvShowsDTO;
 using MovieAPIPCL.Implementation.Models;
+using MovieAPIPCL.Implementation.Models.TVShowsModels;
 using MovieAPIPCL.WebAPIHandler;
 using System;
 using System.Collections.Generic;
@@ -70,7 +72,41 @@ namespace MovieAPIPCL.Implementation.Services
             });
         }
 
+        public async Task<ITVShowDetails> GetTVShowDetailsAsync(int TVShowID)
+        {
+            var TVShowDetails = await ApiHandler.GetApi<TVShowDetailsRootDTO>($"/tv/{TVShowID}?language=en-US&");
 
-
+            return new TVShowDetails()
+            {
+                backdrop_path= ApiHandler.defaultImagePath + TVShowDetails.backdrop_path,
+                created_by= TVShowDetails.created_by,
+                episode_run_time= TVShowDetails.episode_run_time,
+                first_air_date= TVShowDetails.first_air_date,
+                genres= TVShowDetails.genres,
+                homepage= TVShowDetails.homepage,
+                id= TVShowDetails.id,
+                in_production= TVShowDetails.in_production,
+                languages= TVShowDetails.languages,
+                last_air_date= TVShowDetails.last_air_date,
+                last_episode_to_air= TVShowDetails.last_episode_to_air,
+                name= TVShowDetails.name,
+                networks= TVShowDetails.networks,
+                next_episode_to_air= TVShowDetails.next_episode_to_air,
+                number_of_episodes= TVShowDetails.number_of_episodes,
+                number_of_seasons= TVShowDetails.number_of_seasons,
+                original_language= TVShowDetails.original_language,
+                original_name= TVShowDetails.original_name,
+                origin_country= TVShowDetails.origin_country,
+                overview= TVShowDetails.overview,
+                popularity= TVShowDetails.popularity,
+                poster_path= ApiHandler.defaultImagePath + TVShowDetails.poster_path,
+                production_companies= TVShowDetails.production_companies,
+                seasons= TVShowDetails.seasons,
+                status= TVShowDetails.status,
+                type= TVShowDetails.type,
+                vote_average= TVShowDetails.vote_average*10,
+                vote_count= TVShowDetails.vote_count,
+            };
+        }
     }
 }
